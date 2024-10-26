@@ -3,7 +3,6 @@
 *
  */
 package com.myweb.main;
-import com.google.gson.Gson;
 import com.myweb.recursos.FormatClassFromJson;
 import com.myweb.recursos.Http;
 import com.myweb.modelo.CoinFactor;
