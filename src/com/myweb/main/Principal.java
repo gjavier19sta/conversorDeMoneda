@@ -6,10 +6,9 @@ package com.myweb.main;
 import com.myweb.recursos.FormatClassFromJson;
 import com.myweb.recursos.Http;
 import com.myweb.modelo.CoinFactor;
-import com.myweb.modelo.ExchangeRates;
 
 
-import javax.imageio.IIOException;
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -39,7 +38,6 @@ public class Principal {
 
     public static void main(String[] args) {
         Http http = new Http();
-        ExchangeRates exchangeRates;
         String gjson = http.httpBodyResponse();
         CoinFactor coinFactor = new CoinFactor(FormatClassFromJson.obtenerValoresDelJson(gjson));
 
